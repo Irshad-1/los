@@ -4,8 +4,12 @@ import ic6 from "../assets/img/ic6.png"
 import ic4 from "../assets/img/ic4.png"
 import HeroSlider from './Heroslider'
 import styles from '../assets/css/LandingPage.module.css'
+import { Footer } from './Footer'
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
+      const navigate = useNavigate();
+
     return (
         <div className={styles.lndPage}>
             <div className={styles.lndNav} >
@@ -26,9 +30,10 @@ const LandingPage = () => {
                     <img src='https://loans.icicibank.com/loans/home-loan/assets/Images/landing_page/Group%20641.svg' />
                     <h4>New Application</h4>
                     <p>Complete your Home Loan application in just a few<br></br> minutes.</p>
-                    <button>New Customer</button>
+                    <button onClick={()=> navigate("/userverification")}>New Customer</button>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

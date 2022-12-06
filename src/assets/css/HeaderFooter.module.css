@@ -3,7 +3,7 @@
     font-family: Muli,sans-serif;
   }
   .navbar_container{
-    width:75%;
+    width:94%;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -171,7 +171,7 @@
   
   .footer{
     color:white;
-    padding: 60px 0px;
+    padding: 23px 0px;
     width:75%;
     margin:auto;
     display: flex;
@@ -181,4 +181,8 @@
       text-decoration: none;
       text-transform: uppercase;
     justify-content: space-between;
+  }
+
+  .footer div:hover{
+    color:#ad1e23
   }

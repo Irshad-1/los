@@ -1,0 +1,12 @@
+.maindiv {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+}
+.subdiv2{
+    /* margin-left: 300px; */
+    text-align: center;
+    border: 2px solid black;
+    width:75%;
+    margin-left: 40%;
+}

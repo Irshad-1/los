@@ -10,8 +10,10 @@ import {Footer} from './Footer'
  const Dashboard = () => {
     const navigate = useNavigate();
     return (
-        <div>
-            <Header/>
+        <>
+        <Header />
+         <div className={styles.dashMaindiv}>
+            
             <div className={styles.dashmainContainer1}>
                 <div className={styles.dashsubContainer}>
                     <h1>Loans - One Stop Solutions For All Your<br></br> Financial Needs</h1>
@@ -162,6 +164,8 @@ import {Footer} from './Footer'
             </div>
               <Footer />
         </div>
+        </>
+       
     )
 }
 

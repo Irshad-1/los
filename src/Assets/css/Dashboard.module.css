@@ -97,7 +97,7 @@
     margin-bottom: 18px;
   }
   
-  h1 {
+  .dashMaindiv h1 {
     /* font-weight: bold; */
     font-size: 26px;
     line-height: 31px;
@@ -108,7 +108,14 @@
     color: rgb(19, 19, 116)
   }
   
-  p {
+  .dashMaindiv.dashmainContainer1.dashsubContainer p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 23px;
+    color: #3d3d3d;
+  }
+  .dashMaindiv.dashMainContainer2.dc2sub1.dc2sub1box1 p {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
@@ -116,7 +123,7 @@
     color: #3d3d3d;
   }
   
-  button {
+  .dashMaindiv button {
     border-color: #f37e20;
     color: white;
     background-color: transparent;
@@ -143,7 +150,7 @@
   
   }
   
-  button:hover {
+  .dashMaindiv button:hover {
     border-color: #f37e20;
     border: 1px solid #f37e20;
     color: #f37e20;
