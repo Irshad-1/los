@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "../assets/css/HeaderFooter.module.css";
 export const Header = () => {
   const options = [
     {
@@ -38,7 +38,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="navbar-container">
+      <div className={styles.navbar_container}>
         <div>
           <a
             class="logo "
@@ -51,12 +51,12 @@ export const Header = () => {
             />
           </a>
         </div>
-        <div className="inner-container">
+        <div className={styles.inner_container}>
           <img
             src="https://www.icicibank.com/content/dam/icicibank/icici-assets/india.svg"
             alt="INDIA FLAG"
           />
-          <div className="flex navbar-login">
+          <div className={`${styles.flex} ${styles.navbar_login}`}>
             <div>PERSONAL</div>
             <div>LOGIN</div>
           </div>
@@ -66,8 +66,8 @@ export const Header = () => {
           />
         </div>
       </div>
-      <div className="navbar-container">
-        <div className="input-box">
+      <div className={styles.navbar_container}>
+        <div className={styles.input_box}>
           <img src="https://icicibanksmartsearch.senseforth.com/ICICI/Images/search-input-blue.svg" />
           <input
             type=" "
@@ -78,13 +78,13 @@ export const Header = () => {
           />
           <img src="https://icicibanksmartsearch.senseforth.com/ICICI/Images/mic.svg" />
         </div>
-        <div className="logo-box">
+        <div className={styles.logo_box}>
           <img src="https://www.icicibank.com/content/dam/icicibank/india/managed-assets/revamp/imobile.svg" />
           <img src="	https://www.icicibank.com/content/dam/icicibank/india/managed-assets/revamp/digital-banking.svg" />
           <div>HELP & CONTACT</div>
         </div>
       </div>
-      <div className="navbar-container options">
+      <div className={`${styles.navbar_container} ${styles.options}`}>
         {options.map((ele, index) => {
           return (
             <div key={index}>
@@ -93,7 +93,7 @@ export const Header = () => {
             </div>
           );
         })}
-        <div className="apply-link">
+        <div className={styles.apply_link}>
           <img src="https://www.icicibank.com/content/dam/icicibank/india/assets/images/header/apply-icon.png" />
           <p>Apply Online</p>
         </div>

@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "../assets/css/HeaderFooter.module.css";
 
 export const Footer = () => {
   return (
     <>
-      <div className="footer-wrapper">
-        <div className="footer">
+      <div className={styles.footer_wrapper}>
+        <div className={styles.footer}>
           <div>FIND ATM/BRANCH</div>
           <div>REPORT UNAUTHORIZED TRANSACTION</div>
           <div>DOWNLOAD FORMS</div>
@@ -13,7 +14,7 @@ export const Footer = () => {
           <div>GET HELP</div>
         </div>
       </div>
-      <div className="bottom-footer-wrapper">
+      <div className={styles.bottom_footer_wrapper}>
         <div>
           <div>
             <h3>EXPLORE</h3>
@@ -28,6 +29,10 @@ export const Footer = () => {
               <li>Money Transfer to India</li>
               <li>Internet Banking</li>
               <li>Mobile Banking</li>
+            </ul>
+            <h3>AWARDS</h3>
+            <ul>
+              <li>2022</li>
             </ul>
           </div>
           <div>
@@ -69,6 +74,12 @@ export const Footer = () => {
               <li>About Us</li>
               <li>Account activation process</li>
               <li>Customer Literature on NPAs and SMAs</li>
+            </ul>
+            <h3>INITIATIVES</h3>
+            <ul>
+              <li>Debt Service</li>
+              <li>Blogs</li>
+              <li>The Orange Book</li>
             </ul>
           </div>
           <div>
