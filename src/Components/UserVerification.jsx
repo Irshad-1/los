@@ -11,7 +11,9 @@ const UserVerification = () => {
      
       
       <div className={styles.subdiv2}>
-          <h1>Vijit singh</h1>
+         <div className={styles.borderBottom}>
+
+         </div>
       </div>
     </div>
   )
