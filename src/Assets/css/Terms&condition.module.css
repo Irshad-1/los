@@ -1,12 +1,14 @@
+.maindiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
+}
 
 .subdiv2 {
-
     text-align: start;
-    width: 165.3%;
+    width: 83%;
     margin-left: 17%;
     height: 800px;
-
 }
 
 .borderBottom {
@@ -17,8 +19,11 @@
 }
 
 .sbd2div2 {
-    padding:70px
+    padding-left:70px;
+    padding-top: 30px;
+    padding-right: 150px;
 }
+
 .sbd2div2 h2 {
     font-size: 1.25rem;
     color: #053c6d;
@@ -42,4 +47,24 @@
     width: 25%;
     height: 20px!important;
     outline: none;
+}
+
+.fromDiv li{
+    color: rgb(172, 172, 172);;
+    font-size: 15px;
+    line-height: 140%;
+    font-family: Muli,sans-serif;
+    font-weight: 400;
+    background: #fff;
+    margin-left: 20px;
+}
+
+.fromDiv label{
+    color: rgb(80, 80, 80);;
+    font-size: 15px;
+    line-height: 140%;
+    font-family: Muli,sans-serif;
+    font-weight: 400;
+    background: #fff;
+    margin-left: 20px;
 }
