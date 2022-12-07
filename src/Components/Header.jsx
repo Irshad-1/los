@@ -41,7 +41,6 @@ export const Header = () => {
       <div className={styles.navbar_container}>
         <div>
           <a
-            class="logo "
             href="https://www.icicibank.com/?ITM=nli_cms_HP_logo_personal_topnavigation"
             target="_self"
           >
@@ -72,7 +71,6 @@ export const Header = () => {
           <input
             type=" "
             id="search-chatInput"
-            class="sf-searchbox"
             autocomplete="off"
             placeholder="Search for Products, Services"
           />
