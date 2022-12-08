@@ -16,6 +16,11 @@ import UploadSelfie from "./Components/UploadSelfie";
 import TakeSelfie from "./Components/TakeSelfie";
 import OtpVerification from "./Components/OtpVerification";
 
+import { Welcome } from "./Components/Welcome";
+import { SetPassword } from "./Components/SetPassword";
+import { Login } from "./Components/Login";
+import { LoanAvailment } from "./Components/LoanAvailment";
+import { LoanSummary } from "./Components/LoanSummary";
 
 function App() {
   return (
@@ -28,16 +33,24 @@ function App() {
         <Route path="/userdetails" element={<UserDetails />} />
         <Route path="/terms&condition" element={<TermsCondition />} />
         <Route path="/documentation" element={<Documentation />} />
-        <Route path="/employmentFinancialDetails" element={<EmploymentFinancialDetails />}/>
+        <Route
+          path="/employmentFinancialDetails"
+          element={<EmploymentFinancialDetails />}
+        />
         <Route path="/loanDetails" element={<LoanDetails />} />
         <Route path="/loanAgreement" element={<LoanAgreement />} />
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/setPassword" element={<SetPassword />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/panverify" element={<PanVerify />} />
         <Route path="/panscan" element={<PanScan />} />
         <Route path="/addressproof" element={<AddressProof />} />
         <Route path="/addressproofscan" element={<AddressProofScan />} />
         <Route path="/uploadselfie" element={<UploadSelfie />} />
         <Route path="/takeselfie" element={<TakeSelfie />} />
-        
+
+        <Route path="/loanAvailment" element={<LoanAvailment />} />
+        <Route path="/loanSummary" element={<LoanSummary />} />
       </Routes>
     </div>
   );

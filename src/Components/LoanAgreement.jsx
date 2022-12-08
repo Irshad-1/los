@@ -1,8 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar";
 import styles from "../assets/css/Terms&condition.module.css";
+import SignatureCanvas from "react-signature-canvas";
+import { useNavigate } from "react-router-dom";
 
 export const LoanAgreement = () => {
+  const navigate = useNavigate();
+  const sigPad = React.useRef(null);
+  const [state, setState] = React.useState(false);
   return (
     <div className={styles.mainDiv}>
       <NavBar />
@@ -54,10 +59,48 @@ export const LoanAgreement = () => {
                 </p>
               </li>
             </ol>
-            <button type="submit" className="button">
-              CONTINUE
-            </button>
           </form>
+          <SignatureCanvas
+            penColor="green"
+            ref={sigPad}
+            canvasProps={{
+              width: 500,
+              height: 200,
+              className: "sigCanvas",
+              style: {
+                border: "1px solid black",
+                backgroundColor: "#cccccc",
+                borderRadius: "10px",
+                display: "block",
+                marginBottom: "50px",
+              },
+            }}
+          />
+          <button
+            onClick={() => {
+              setState((prev) => !prev);
+            }}
+          >
+            &#10004;
+          </button>
+          <button
+            disabled={state}
+            onClick={() => {
+              sigPad.current.clear();
+            }}
+          >
+            &#x2716;
+          </button>
+          {state && (
+            <button
+              style={{ display: "block", marginTop: "30px" }}
+              onClick={() => {
+                navigate("/welcome");
+              }}
+            >
+              Agree & Continue
+            </button>
+          )}
         </div>
       </div>
     </div>
