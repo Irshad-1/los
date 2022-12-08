@@ -5,23 +5,23 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
 import * as Yup from 'yup'
 
-const UserVerification = () => {
+const OtpVerification = () => {
   const navigate = useNavigate();
   const [visi, setVisi] = React.useState(true);
 
   const validationSchema = Yup.object({
-    mobileNumber: Yup.number()
-    .min(1000000000,"Mobile number must be 10 digit")
-    .required("Required"),
+    otp: Yup.number()
+    .min(6)
+    .required("Required")
 
   });
 
   const handleSubmit = (values, payload) => {
-    navigate("/otpverification");
+    navigate("/terms&condition")
   };
 
   const initialValues = {
-    mobileNumber: "",
+    otp:""
   };
 
   return (
@@ -30,9 +30,10 @@ const UserVerification = () => {
 
       <div className={styles.subdiv2}>
         <div className={styles.borderBottom}></div>
+        
           <div className={styles.sbd2div2}>
             <h2>Tell us about your basic details and loan requirements</h2>
-            <h3>May we know your mobile number?</h3>
+            <h3>Please Enter your OTP?</h3>
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -52,18 +53,18 @@ const UserVerification = () => {
                   <Form className="FormDiv">
                     <Field
                       type="number"
-                      name="mobileNumber"
-                      placeholder="Enter Mobile Number"
+                      name="otp"
+                      placeholder="Enter OTP"
                       className={styles.inputTag}
                       onInput={(e) => {
                         e.target.value = Math.max(0, parseInt(e.target.value))
                           .toString()
-                          .slice(0, 10);
+                          .slice(0, 6);
                       }}
-                      value={values.mobileNumber}
+                      value={values.otp}
                     />
-                    <br />
-                    <ErrorMessage name="mobileNumber" />
+                    <br></br>
+                    <ErrorMessage name="otp" />
                    
                     <br />
                     <br />
@@ -71,19 +72,17 @@ const UserVerification = () => {
                       type="submit"
                       className="button"
                     >
-                      CONTINUE
+                      PROCEED
                     </button>
                   </Form>
                 );
               }}
             </Formik>
           </div>
-        
-
         <div></div>
       </div>
     </div>
   );
 };
 
-export default UserVerification;
+export default OtpVerification;

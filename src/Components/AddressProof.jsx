@@ -31,7 +31,7 @@ const AddressProof = () => {
                         </div>
                     </div>
                 </div>
-                <button onClick={() => navigate("/userDetails")}>Upload Now</button>
+                <button onClick={() => navigate("/addressproofscan")}>Upload Now</button>
                 </div>
     </div>
   )

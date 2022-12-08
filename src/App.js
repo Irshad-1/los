@@ -11,6 +11,11 @@ import PanVerify from "./Components/PanVerify";
 import PanScan from "./Components/PanScan";
 import AddressProof from "./Components/AddressProof";
 import { LoanAgreement } from "./Components/LoanAgreement";
+import AddressProofScan from "./Components/AddressProofScan";
+import UploadSelfie from "./Components/UploadSelfie";
+import TakeSelfie from "./Components/TakeSelfie";
+import OtpVerification from "./Components/OtpVerification";
+
 
 function App() {
   return (
@@ -19,18 +24,20 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/landingpage" element={<LandingPage />} />
         <Route path="/userverification" element={<UserVerification />} />
+        <Route path="/otpverification" element={<OtpVerification />} />
         <Route path="/userdetails" element={<UserDetails />} />
         <Route path="/terms&condition" element={<TermsCondition />} />
         <Route path="/documentation" element={<Documentation />} />
-        <Route
-          path="/employmentFinancialDetails"
-          element={<EmploymentFinancialDetails />}
-        />
+        <Route path="/employmentFinancialDetails" element={<EmploymentFinancialDetails />}/>
         <Route path="/loanDetails" element={<LoanDetails />} />
         <Route path="/loanAgreement" element={<LoanAgreement />} />
         <Route path="/panverify" element={<PanVerify />} />
         <Route path="/panscan" element={<PanScan />} />
         <Route path="/addressproof" element={<AddressProof />} />
+        <Route path="/addressproofscan" element={<AddressProofScan />} />
+        <Route path="/uploadselfie" element={<UploadSelfie />} />
+        <Route path="/takeselfie" element={<TakeSelfie />} />
+        
       </Routes>
     </div>
   );
