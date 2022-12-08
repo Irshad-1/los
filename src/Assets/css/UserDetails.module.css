@@ -28,6 +28,7 @@
 .subdiv2{
    
     margin-left: 17%;
+    padding-bottom: 50px;
 }
 .formDiv>h2{
     color: #053c6d;
@@ -51,6 +52,11 @@
     height:60px;
     box-shadow: 0 5px 13px -8px rgb(93 91 91 / 75%);
     padding: 0.75rem 0;
+    display: flex;
+}
+
+.borderBottom img {
+    margin-left: 90%;
 }
 .backButton{
    

@@ -11,7 +11,10 @@ export const LoanDetails = () => {
       <NavBar />
 
       <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}></div>
+        <div className={styles.borderBottom}><img
+          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+          alt="ICICI LOGO"
+        /></div>
         <div className={styles.details}>
           <h1>Congratulations!</h1>
           <h3>

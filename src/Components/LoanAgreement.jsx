@@ -11,8 +11,11 @@ export const LoanAgreement = () => {
   return (
     <div className={styles.mainDiv}>
       <NavBar />
-      <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}></div>
+      <div className={styles.subdiv2} style={{paddingBottom:"50px"}}>
+        <div className={styles.borderBottom}><img
+          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+          alt="ICICI LOGO"
+        /></div>
         <div className={styles.sbd2div2}>
           <h2>General terms & conditions</h2>
           <form className={styles.fromDiv}>

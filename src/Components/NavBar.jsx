@@ -4,10 +4,7 @@ const NavBar = () => {
   return (
     <div className={styles.navbar}>
       <div>
-        <img
-          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
-          alt="ICICI LOGO"
-        />
+        <h1>DEMO BANK</h1>
       </div>
       <div className={styles.sidenavList}>
         <div>

@@ -7,7 +7,7 @@ export const AuthContextProvider = ({children}) => {
     const [token, setToken] = useState("");
 
     const idVerification = (token) => {
-        setToken(token);
+        setId(token);
        
     }
 

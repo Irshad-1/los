@@ -24,7 +24,10 @@ const TermsCondition = () => {
         <div className={styles.mainDiv}>
             <NavBar />
             <div className={styles.subdiv2}>
-                <div className={styles.borderBottom}></div>
+                <div className={styles.borderBottom}><img
+          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+          alt="ICICI LOGO"
+        /></div>
                 <div className={styles.sbd2div2}>
                     <h2>General terms & conditions</h2>
                     {/* <h3>May we know your mobile number?</h3> */}
