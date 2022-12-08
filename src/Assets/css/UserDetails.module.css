@@ -77,7 +77,8 @@
 }
 .details{
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 100px;
+    margin-right:100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,14 +114,31 @@
 .card{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;
-    height:500px;
+    
     width:100%;
+   margin-bottom: 50px;
+    background-color:  #439ACB;
+    color:white;
+}
+.card >h3,.card>p{
+    text-align: center;
+}
+.card li{
+    list-style-type: none;
+}
+.card ul div{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width:50%;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+.card *{
+    color:white;
 }
 .card h3{
     font-size: 1.25rem;
-    color: #053c6d;
+
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
