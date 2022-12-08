@@ -56,15 +56,15 @@ export const LoanSummary = () => {
               </li>
             </ul>
           </div>
-          <button>Cancel</button>
-          <button
-            onClick={() => {
-              navigate("/loanSummary");
-            }}
-          >
-            Confirm
-          </button>
         </div>
+        <button>Cancel</button>
+        <button
+          onClick={() => {
+            navigate("/authentication");
+          }}
+        >
+          Confirm
+        </button>
       </div>
     </div>
   );

@@ -21,6 +21,8 @@ import { SetPassword } from "./Components/SetPassword";
 import { Login } from "./Components/Login";
 import { LoanAvailment } from "./Components/LoanAvailment";
 import { LoanSummary } from "./Components/LoanSummary";
+import { Authentication } from "./Components/Authentication";
+import { Congratulations } from "./Components/Congratulations";
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
 
         <Route path="/loanAvailment" element={<LoanAvailment />} />
         <Route path="/loanSummary" element={<LoanSummary />} />
+        <Route path="/authentication" element={<Authentication />} />
+        <Route path="/congratulations" element={<Congratulations />} />
       </Routes>
     </div>
   );
