@@ -3,6 +3,8 @@ import NavBar from './NavBar'
 import styles from '../assets/css/Documentation.module.css'
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthcontextProvider.js';
+import img1 from '../assets/img/Vector.png'
+import img2 from '../assets/img/Vector1.png'
 
 const Documentation = () => {
   const navigate = useNavigate();
@@ -26,7 +28,7 @@ const Documentation = () => {
               <span><h1>1</h1></span>
               <h2>Scan your ID</h2>
               {
-                id  
+                id  ? <img src={img1} style={{marginLeft:"40%"}}/> : <img style={{marginLeft:"40%"}} src={img2}/>
               }
 
             </div>
