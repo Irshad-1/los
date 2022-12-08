@@ -1,8 +1,4 @@
-.maindiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-}
 
 .subdiv2 {
     text-align: start;

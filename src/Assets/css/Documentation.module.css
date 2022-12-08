@@ -1,21 +1,78 @@
-.maindiv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-}
 
 .subdiv2 {
 
     text-align: start;
     width: 165.3%;
-    margin-left: 34%;
-    height: 800px;
+    margin-left: 17%;
+    height: 600px;
 
 }
 
 .borderBottom {
-    width: 100%;
+    width: 50%;
     height: 60px;
     box-shadow: 0 5px 13px -8px rgb(93 91 91 / 75%);
     padding: 0.75rem 0;
+}
+
+.sbd2div2 {
+    padding-left:70px;
+    padding-top: 30px;
+    padding-right: 150px;
+}
+
+.sbd2div2 h2 {
+    font-size: 1.25rem;
+    color: #053c6d;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.sbd2div2 h3 {
+    color: #053c6d;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.sd2mainDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+  .smdSubDiv{
+    height:100px;
+    width:30%;
+    margin-left: 20px;
+    border-radius: 10px;
+    border:1px solid #e77817;
+    display: flex;
+    align-items: center;
+}
+.smdSubDiv:hover{
+    height:100px;
+    width:30%;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* border:1px solid #e77817; */
+    display: flex;
+    align-items: center;
+    background-color: #e77817;
+}
+.smdSubDiv h1 {
+    font-size: 2rem;
+    color: #053c6d;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.smdSubDiv h2 {
+    font-size: 1.25rem;
+    color: #053c6d;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    margin-left: 50px;
 }

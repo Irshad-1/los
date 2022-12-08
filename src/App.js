@@ -7,6 +7,10 @@ import TermsCondition from "./Components/Terms&condition";
 import Documentation from "./Components/Documentation";
 import { EmploymentFinancialDetails } from "./Components/EmploymentFinancialDetails";
 import { LoanDetails } from "./Components/LoanDetails";
+import UserVerification from './Components/UserVerification';
+import PanVerify from "./Components/PanVerify";
+import PanScan from "./Components/PanScan";
+import AddressProof from "./Components/AddressProof";
 
 function App() {
   return (
@@ -18,11 +22,11 @@ function App() {
         <Route path="/userdetails" element={<UserDetails />} />
         <Route path="/terms&condition" element={<TermsCondition />} />
         <Route path="/documentation" element={<Documentation />} />
-        <Route
-          path="/employmentFinancialDetails"
-          element={<EmploymentFinancialDetails />}
-        />
+        <Route path="/employmentFinancialDetails" element={<EmploymentFinancialDetails />} />
         <Route path="/loanDetails" element={<LoanDetails />} />
+        <Route path='/panverify' element={<PanVerify />} />
+        <Route path='/panscan' element={<PanScan />} />
+        <Route path='/addressproof' element={<AddressProof />} />
       </Routes>
     </div>
   );
