@@ -1,10 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
 import styles from "../assets/css/UserDetails.module.css";
-import { Row, Col, Container } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import { useNavigate } from "react-router-dom";
 
 const UserDetails = () => {
+  const navigate = useNavigate();
   const initialValues = {
     firstName: "",
     middleName: "",
@@ -33,7 +34,6 @@ const UserDetails = () => {
       <div className={styles.subdiv2}>
         <div className={styles.borderBottom}></div>
         <div className={styles.formDiv}>
-          <h3>Tell us about your basic details</h3>
           <Formik initialValues={initialValues}>
             {({
               values,
@@ -47,8 +47,10 @@ const UserDetails = () => {
             }) => {
               return (
                 <Form className="container">
-                  <Row className={styles.marginBottom}>
-                    <Col>
+                  <h3>Tell us about your basic details</h3>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>First Name</h3>
                       <Field
                         type="text"
                         name="firstName"
@@ -56,8 +58,9 @@ const UserDetails = () => {
                         className={styles.inputTag}
                       />
                       <ErrorMessage name="firstName" />
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Middle Name</h3>
                       <Field
                         type="text"
                         name="middleName"
@@ -65,8 +68,9 @@ const UserDetails = () => {
                         className={styles.inputTag}
                       />
                       <ErrorMessage name="middleName" />
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Last Name</h3>
                       <Field
                         type="text"
                         name="lastName"
@@ -74,91 +78,188 @@ const UserDetails = () => {
                         className={styles.inputTag}
                       />
                       <ErrorMessage name="lastName" />
-                    </Col>
-                  </Row>
-                  <Row className={styles.marginBottom}>
-                    <Col>
+                    </div>
+                  </div>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>Date Of Birth</h3>
                       <Field type="date" name="dateOfBirth" />
                       <ErrorMessage name="dateOfBirth" />
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Place Of Birth</h3>
+                      <Field
+                        type="text"
+                        name="placeOfBirth"
+                        placeholder="Enter Place Of Birth"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="placeOfBirth" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Nationality</h3>
+                      <Field
+                        type="text"
+                        name="nationality"
+                        placeholder="Enter Nationality"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="nationality" />
+                    </div>
+                  </div>
+                  <h3>Other Personal Details</h3>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>Income Proof Type</h3>
+                      <Field
+                        type="text"
+                        name="incomeProofType"
+                        placeholder="Enter Income Proof Type"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="incomeProofType" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Income Proof Number</h3>
+                      <Field
+                        type="text"
+                        name="incomeProofNumber"
+                        placeholder="Enter Income Proof Number"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="incomeProofNumber" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Address Proof Type</h3>
+                      <Field
+                        type="text"
+                        name="addressProofType"
+                        placeholder="Enter Address Proof Type"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="addressProofType" />
+                    </div>
+                  </div>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>Address Proof Number</h3>
+                      <Field
+                        type="text"
+                        name="addressProofNumber"
+                        placeholder="Enter Address Proof Number"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="addressProofNumber" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Gender</h3>
+                      <Field
+                        type="text"
+                        name="gender"
+                        placeholder="Enter Gender"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="gender" />
+                    </div>
+                    <div></div>
+                  </div>
+                  <h3>Contact Details</h3>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>Mobile Number</h3>
                       <Field
                         type="number"
                         name="mobileNumber"
                         placeholder="Enter Mobile Number"
                         className={styles.inputTag}
-                        onInput={(e) => {
-                          e.target.value = Math.max(0, parseInt(e.target.value))
-                            .toString()
-                            .slice(0, 10);
-                        }}
-                        value={values.mobileNumber}
                       />
                       <ErrorMessage name="mobileNumber" />
-                    </Col>
-                    <Col>
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Email ID</h3>
                       <Field
-                        type="number"
-                        name="mobileNumber"
-                        placeholder="Enter Mobile Number"
+                        type="email"
+                        name="emailId"
+                        placeholder="Enter Email ID"
                         className={styles.inputTag}
-                        onInput={(e) => {
-                          e.target.value = Math.max(0, parseInt(e.target.value))
-                            .toString()
-                            .slice(0, 10);
-                        }}
-                        value={values.mobileNumber}
                       />
-                      <ErrorMessage name="mobileNumber" />
-                    </Col>
-                  </Row>
-                  <Row className={styles.marginBottom}>
-                    <Col>
+                      <ErrorMessage name="emailId" />
+                    </div>
+                    <div></div>
+                  </div>
+                  <h3>Address Details</h3>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>Address Line 1</h3>
                       <Field
-                        type="number"
-                        name="mobileNumber"
-                        placeholder="Enter Mobile Number"
+                        type="text"
+                        name="addressLine1"
+                        placeholder="Enter Address Line 1"
                         className={styles.inputTag}
-                        onInput={(e) => {
-                          e.target.value = Math.max(0, parseInt(e.target.value))
-                            .toString()
-                            .slice(0, 10);
-                        }}
-                        value={values.mobileNumber}
                       />
-                      <ErrorMessage name="mobileNumber" />
-                    </Col>
-                    <Col>
+                      <ErrorMessage name="addressLine1" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Address Line 2</h3>
                       <Field
-                        type="number"
-                        name="mobileNumber"
-                        placeholder="Enter Mobile Number"
+                        type="text"
+                        name="addressLine2"
+                        placeholder="Enter Address Line 2"
                         className={styles.inputTag}
-                        onInput={(e) => {
-                          e.target.value = Math.max(0, parseInt(e.target.value))
-                            .toString()
-                            .slice(0, 10);
-                        }}
-                        value={values.mobileNumber}
                       />
-                      <ErrorMessage name="mobileNumber" />
-                    </Col>
-                    <Col>
+                      <ErrorMessage name="addressLine2" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Address Line 3</h3>
                       <Field
-                        type="number"
-                        name="mobileNumber"
-                        placeholder="Enter Mobile Number"
+                        type="text"
+                        name="addressLine3"
+                        placeholder="Enter Address Line 3"
                         className={styles.inputTag}
-                        onInput={(e) => {
-                          e.target.value = Math.max(0, parseInt(e.target.value))
-                            .toString()
-                            .slice(0, 10);
-                        }}
-                        value={values.mobileNumber}
                       />
-                      <ErrorMessage name="mobileNumber" />
-                    </Col>
-                  </Row>
+                      <ErrorMessage name="addressLine3" />
+                    </div>
+                  </div>
+                  <div className={styles.marginBottom}>
+                    <div>
+                      <h3 className={styles.label}>City</h3>
+                      <Field
+                        type="text"
+                        name="city"
+                        placeholder="Enter City"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="city" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>Place</h3>
+                      <Field
+                        type="text"
+                        name="place"
+                        placeholder="Enter Place"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="place" />
+                    </div>
+                    <div>
+                      <h3 className={styles.label}>ZIP Code</h3>
+                      <Field
+                        type="text"
+                        name="zipCode"
+                        placeholder="Enter ZIP Code"
+                        className={styles.inputTag}
+                      />
+                      <ErrorMessage name="zipCode" />
+                    </div>
+                  </div>
+                  <button className={styles.backButton}>Cancel</button>
+                  <button
+                    type="submit"
+                    className="button"
+                    onClick={() => navigate("/employmentFinancialDetails")}
+                  >
+                    Continue
+                  </button>
                 </Form>
               );
             }}
