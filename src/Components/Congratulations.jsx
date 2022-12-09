@@ -28,7 +28,7 @@ export const Congratulations = () => {
           </h3>
           <button
             onClick={() => {
-              navigate("/");
+              navigate("/landingpage");
             }}
           >
             Go to Dashboard
