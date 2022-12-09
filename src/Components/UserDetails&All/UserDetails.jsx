@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../SideBar/NavBar";
+import Sidebar from "../SideBar/Sidebar";
 import styles from "./UserDetails.module.css";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
@@ -29,13 +29,15 @@ const UserDetails = () => {
   };
   return (
     <div className={styles.maindiv}>
-      <NavBar />
+      <Sidebar />
 
       <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}><img
-          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
-          alt="ICICI LOGO"
-        /></div>
+        <div className={styles.borderBottom}>
+          <img
+            src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+            alt="ICICI LOGO"
+          />
+        </div>
         <div className={styles.formDiv}>
           <Formik initialValues={initialValues}>
             {({

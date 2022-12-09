@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../SideBar/NavBar";
+import Sidebar from "../SideBar/Sidebar";
 import styles from "./UserDetails.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
@@ -8,13 +8,15 @@ export const LoanAvailment = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.maindiv}>
-      <NavBar />
+      <Sidebar />
 
       <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}><img
-          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
-          alt="ICICI LOGO"
-        /></div>
+        <div className={styles.borderBottom}>
+          <img
+            src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+            alt="ICICI LOGO"
+          />
+        </div>
         <div className={styles.loanAvail}>
           <h3>Tenor</h3>
           <div>

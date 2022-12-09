@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../SideBar/NavBar";
+import Sidebar from "../SideBar/Sidebar";
 import styles from "../MobileNumber&OtpVerification/UserVerification.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
@@ -23,13 +23,15 @@ export const Authentication = () => {
 
   return (
     <div className={styles.maindiv}>
-      <NavBar />
+      <Sidebar />
 
       <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}><img
-          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
-          alt="ICICI LOGO"
-        /></div>
+        <div className={styles.borderBottom}>
+          <img
+            src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+            alt="ICICI LOGO"
+          />
+        </div>
 
         <div className={styles.sbd2div2}>
           <h2>Enter the OTP we send to +91 XXX XXX X298</h2>

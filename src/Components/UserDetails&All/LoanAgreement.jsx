@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../SideBar/NavBar";
+import Sidebar from "../SideBar/Sidebar";
 import styles from "../Terms&Condition/Terms&condition.module.css";
 import SignatureCanvas from "react-signature-canvas";
 import { useNavigate } from "react-router-dom";
@@ -10,12 +10,14 @@ export const LoanAgreement = () => {
   const [state, setState] = React.useState(false);
   return (
     <div className={styles.mainDiv}>
-      <NavBar />
-      <div className={styles.subdiv2} style={{paddingBottom:"50px"}}>
-        <div className={styles.borderBottom}><img
-          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
-          alt="ICICI LOGO"
-        /></div>
+      <Sidebar />
+      <div className={styles.subdiv2} style={{ paddingBottom: "50px" }}>
+        <div className={styles.borderBottom}>
+          <img
+            src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+            alt="ICICI LOGO"
+          />
+        </div>
         <div className={styles.sbd2div2}>
           <h2>General terms & conditions</h2>
           <form className={styles.fromDiv}>

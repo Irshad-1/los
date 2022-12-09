@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../SideBar/NavBar";
+import Sidebar from "../SideBar/Sidebar";
 import styles from "./UserDetails.module.css";
 import { useNavigate } from "react-router-dom";
 
@@ -7,13 +7,15 @@ export const LoanSummary = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.maindiv}>
-      <NavBar />
+      <Sidebar />
 
       <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}><img
-          src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
-          alt="ICICI LOGO"
-        /></div>
+        <div className={styles.borderBottom}>
+          <img
+            src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
+            alt="ICICI LOGO"
+          />
+        </div>
         <div className={styles.details}>
           <h1>Let’s Review</h1>
           <h3>Are the following details correct?</h3>

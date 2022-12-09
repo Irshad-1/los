@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Navbar.module.css";
-const NavBar = () => {
+import styles from "./Sidebar.module.css";
+const Sidebar = () => {
   return (
     <div className={styles.navbar}>
       <div>
@@ -61,4 +61,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Sidebar;
