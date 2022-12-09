@@ -15,10 +15,9 @@ import AddressProofScan from "./Components/AddressVerification/AddressProofScan"
 import UploadSelfie from "./Components/SelfieVerification/UploadSelfie";
 import TakeSelfie from "./Components/SelfieVerification/TakeSelfie";
 import OtpVerification from "./Components/MobileNumber&OtpVerification/OtpVerification";
-
 import { Welcome } from "./Components/UserDetails&All/Welcome";
 import { SetPassword } from "./Components/UserDetails&All/SetPassword";
-import { Login } from "./Components/UserDetails&All/Login";
+import { Login } from "./Components/Login/Login";
 import { LoanAvailment } from "./Components/UserDetails&All/LoanAvailment";
 import { LoanSummary } from "./Components/UserDetails&All/LoanSummary";
 import { Authentication } from "./Components/UserDetails&All/Authentication";

@@ -47,9 +47,7 @@ export const EmploymentFinancialDetails = () => {
                   <h3>Tell us about your Financial Details</h3>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>
-                        Purpose for Opening Account
-                      </h3>
+                      <h3 className="label">Purpose for Opening Account</h3>
                       <Field
                         as="select"
                         name="purposeForOpeningAccount"
@@ -60,7 +58,7 @@ export const EmploymentFinancialDetails = () => {
                       <ErrorMessage name="purposeForOpeningAccount" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Source of Funds</h3>
+                      <h3 className="label">Source of Funds</h3>
                       <Field
                         as="select"
                         name="sourceOfFunds"
@@ -71,7 +69,7 @@ export const EmploymentFinancialDetails = () => {
                       <ErrorMessage name="sourceOfFunds" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Monthly Income</h3>
+                      <h3 className="label">Monthly Income</h3>
                       <Field
                         type="number"
                         name="monthlyIncome"
@@ -83,9 +81,7 @@ export const EmploymentFinancialDetails = () => {
                   </div>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>
-                        Choose Salary Credit Date
-                      </h3>
+                      <h3 className="label">Choose Salary Credit Date</h3>
                       <Field as="select" name="salaryCreditDate">
                         <option value="">Within 5th</option>
                       </Field>
@@ -97,7 +93,7 @@ export const EmploymentFinancialDetails = () => {
                   <h3>Employment Details</h3>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Employment Type</h3>
+                      <h3 className="label">Employment Type</h3>
                       <Field
                         as="select"
                         name="employmentType"
@@ -108,7 +104,7 @@ export const EmploymentFinancialDetails = () => {
                       <ErrorMessage name="employmentType" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Employment Status</h3>
+                      <h3 className="label">Employment Status</h3>
                       <Field
                         as="select"
                         name="employmentStatus"
@@ -119,7 +115,7 @@ export const EmploymentFinancialDetails = () => {
                       <ErrorMessage name="employmentStatus" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Nature Of Work</h3>
+                      <h3 className="label">Nature Of Work</h3>
                       <Field
                         as="select"
                         name="natureOfWork"
@@ -132,7 +128,7 @@ export const EmploymentFinancialDetails = () => {
                   </div>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Employer Name</h3>
+                      <h3 className="label">Employer Name</h3>
                       <Field
                         type="text"
                         name="employerName"
@@ -142,7 +138,7 @@ export const EmploymentFinancialDetails = () => {
                       <ErrorMessage name="employerName" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Employer Address</h3>
+                      <h3 className="label">Employer Address</h3>
                       <Field
                         type="text"
                         name="employerAddress"
@@ -152,7 +148,7 @@ export const EmploymentFinancialDetails = () => {
                       <ErrorMessage name="employerAddress" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Industry Type</h3>
+                      <h3 className="label">Industry Type</h3>
                       <Field
                         as="select"
                         name="industryType"
@@ -165,7 +161,7 @@ export const EmploymentFinancialDetails = () => {
                   </div>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Position</h3>
+                      <h3 className="label">Position</h3>
                       <Field
                         as="select"
                         name="position"

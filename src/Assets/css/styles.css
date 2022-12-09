@@ -1,0 +1,71 @@
+button {
+    border-color: #f37e20;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #f37e20;
+    background-color: #f37e20;
+    margin-left: 35px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12.5px 34px;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+  
+  }
+  
+  button:hover {
+    border-color: #f37e20;
+    border: 1px solid #f37e20;
+    color: #f37e20;
+    background-color: white;
+  }
+  .redButton{
+    border-color: #ad1e23;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ad1e23;
+    background-color: #ad1e23;
+    margin-left: 35px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12.5px 34px;
+    line-height: 1;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .redButton:hover {
+    border-color: #ad1e23;
+    border: 1px solid #ad1e23;
+    color: #ad1e23;
+    background-color: white;
+  }
+.inputCard{
+    margin:50px auto;
+    width:40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    padding:100px;
+}
+.inputCard >form>h3{
+    font-size: 1.25rem;
+    color: #053c6d;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.inputCard > h2{
+    color: #053c6d;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.label{
+    color: #053c6d;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.passwordDiv form>div:nth-child(2),.passwordDiv form>div:nth-child(3){
+    display: flex;
+    margin:50px auto;
+}

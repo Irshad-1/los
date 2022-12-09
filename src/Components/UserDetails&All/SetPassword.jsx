@@ -25,7 +25,7 @@ export const SetPassword = () => {
             alt="ICICI LOGO"
           />
         </div>
-        <div className={styles.passwordDiv}>
+        <div className="passwordDiv inputCard">
           <Formik initialValues={initialValues}>
             {({
               values,

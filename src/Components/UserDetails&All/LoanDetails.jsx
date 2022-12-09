@@ -22,7 +22,7 @@ export const LoanDetails = () => {
           <h3>
             Your personal loan has been approved. See approved terms below.
           </h3>
-          <div className={styles.card}>
+          <div className={styles.bigCard}>
             <h3>Personal Loan Details</h3>
             <p>Get the funds you need - as you need it, when you need it.</p>
             <ul>

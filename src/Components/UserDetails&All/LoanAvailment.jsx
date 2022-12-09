@@ -52,7 +52,9 @@ export const LoanAvailment = () => {
             Your loan proceeds will be credited to the XXXIIIX XIIXIX savings
             account.
           </p>
-          <button>Avail Later</button>
+          <button className="redButton" color="red">
+            Avail Later
+          </button>
           <button
             onClick={() => {
               navigate("/loanSummary");

@@ -35,16 +35,8 @@
     font-size: .8rem;
     font-weight: 700;
 }
-.passwordDiv>h2{
-    color: #053c6d;
-    font-size: .8rem;
-    font-weight: 700;
-}
-.label{
-    color: #053c6d;
-    font-size: .8rem;
-    font-weight: 700;
-}
+
+
 
 .borderBottom {
     width:100%;
@@ -109,18 +101,11 @@
   color:white;
   background-color:  #f37e20;
 }
-.passwordDiv{
-    margin-left: 100px;
-    margin-top:100px;
-    width:40%;
-}
+
 .formDiv{
     margin-left: 20px;
 }
-.passwordDiv form>div:nth-child(2),.passwordDiv form>div:nth-child(3){
-    display: flex;
-    margin:50px auto;
-}
+
 
 .loanAvail{
     width:70%;
@@ -188,24 +173,6 @@
     margin-bottom: 1.5rem;
     
 }
-
-.formDiv >form>h3{
-    font-size: 1.25rem;
-    color: #053c6d;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-.passwordDiv >form>h3{
-    font-size: 1.25rem;
-    color: #053c6d;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-}
-.marginBottom{
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
 .card{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;
@@ -232,6 +199,48 @@
     color:white;
 }
 .card h3{
+    font-size: 1.25rem;
+
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.formDiv >form>h3{
+    font-size: 1.25rem;
+    color: #053c6d;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.marginBottom{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.bigCard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    
+    width:100%;
+   margin-bottom: 50px;
+    background-color:  #439ACB;
+    color:white;
+}
+.bigCard >h3,.bigCard>p{
+    text-align: center;
+}
+.bigCard li{
+    list-style-type: none;
+}
+.bigCard ul div{
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+.bigCard *{
+    color:white;
+}
+.bigCard h3{
     font-size: 1.25rem;
 
     margin-bottom: 1.5rem;

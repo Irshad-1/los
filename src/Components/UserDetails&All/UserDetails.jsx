@@ -55,7 +55,7 @@ const UserDetails = () => {
                   <h3>Tell us about your basic details</h3>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>First Name</h3>
+                      <h3 className="label">First Name</h3>
                       <Field
                         type="text"
                         name="firstName"
@@ -65,7 +65,7 @@ const UserDetails = () => {
                       <ErrorMessage name="firstName" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Middle Name</h3>
+                      <h3 className="label">Middle Name</h3>
                       <Field
                         type="text"
                         name="middleName"
@@ -75,7 +75,7 @@ const UserDetails = () => {
                       <ErrorMessage name="middleName" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Last Name</h3>
+                      <h3 className="label">Last Name</h3>
                       <Field
                         type="text"
                         name="lastName"
@@ -87,12 +87,12 @@ const UserDetails = () => {
                   </div>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Date Of Birth</h3>
+                      <h3 className="label">Date Of Birth</h3>
                       <Field type="date" name="dateOfBirth" />
                       <ErrorMessage name="dateOfBirth" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Place Of Birth</h3>
+                      <h3 className="label">Place Of Birth</h3>
                       <Field
                         type="text"
                         name="placeOfBirth"
@@ -102,7 +102,7 @@ const UserDetails = () => {
                       <ErrorMessage name="placeOfBirth" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Nationality</h3>
+                      <h3 className="label">Nationality</h3>
                       <Field
                         type="text"
                         name="nationality"
@@ -115,7 +115,7 @@ const UserDetails = () => {
                   <h3>Other Personal Details</h3>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Income Proof Type</h3>
+                      <h3 className="label">Income Proof Type</h3>
                       <Field
                         type="text"
                         name="incomeProofType"
@@ -125,7 +125,7 @@ const UserDetails = () => {
                       <ErrorMessage name="incomeProofType" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Income Proof Number</h3>
+                      <h3 className="label">Income Proof Number</h3>
                       <Field
                         type="text"
                         name="incomeProofNumber"
@@ -135,7 +135,7 @@ const UserDetails = () => {
                       <ErrorMessage name="incomeProofNumber" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Address Proof Type</h3>
+                      <h3 className="label">Address Proof Type</h3>
                       <Field
                         type="text"
                         name="addressProofType"
@@ -147,7 +147,7 @@ const UserDetails = () => {
                   </div>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Address Proof Number</h3>
+                      <h3 className="label">Address Proof Number</h3>
                       <Field
                         type="text"
                         name="addressProofNumber"
@@ -157,7 +157,7 @@ const UserDetails = () => {
                       <ErrorMessage name="addressProofNumber" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Gender</h3>
+                      <h3 className="label">Gender</h3>
                       <Field
                         type="text"
                         name="gender"
@@ -171,7 +171,7 @@ const UserDetails = () => {
                   <h3>Contact Details</h3>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Mobile Number</h3>
+                      <h3 className="label">Mobile Number</h3>
                       <Field
                         type="number"
                         name="mobileNumber"
@@ -181,7 +181,7 @@ const UserDetails = () => {
                       <ErrorMessage name="mobileNumber" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Email ID</h3>
+                      <h3 className="label">Email ID</h3>
                       <Field
                         type="email"
                         name="emailId"
@@ -195,7 +195,7 @@ const UserDetails = () => {
                   <h3>Address Details</h3>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>Address Line 1</h3>
+                      <h3 className="label">Address Line 1</h3>
                       <Field
                         type="text"
                         name="addressLine1"
@@ -205,7 +205,7 @@ const UserDetails = () => {
                       <ErrorMessage name="addressLine1" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Address Line 2</h3>
+                      <h3 className="label">Address Line 2</h3>
                       <Field
                         type="text"
                         name="addressLine2"
@@ -215,7 +215,7 @@ const UserDetails = () => {
                       <ErrorMessage name="addressLine2" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Address Line 3</h3>
+                      <h3 className="label">Address Line 3</h3>
                       <Field
                         type="text"
                         name="addressLine3"
@@ -227,7 +227,7 @@ const UserDetails = () => {
                   </div>
                   <div className={styles.marginBottom}>
                     <div>
-                      <h3 className={styles.label}>City</h3>
+                      <h3 className="label">City</h3>
                       <Field
                         type="text"
                         name="city"
@@ -237,7 +237,7 @@ const UserDetails = () => {
                       <ErrorMessage name="city" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>Place</h3>
+                      <h3 className="label">Place</h3>
                       <Field
                         type="text"
                         name="place"
@@ -247,7 +247,7 @@ const UserDetails = () => {
                       <ErrorMessage name="place" />
                     </div>
                     <div>
-                      <h3 className={styles.label}>ZIP Code</h3>
+                      <h3 className="label">ZIP Code</h3>
                       <Field
                         type="text"
                         name="zipCode"

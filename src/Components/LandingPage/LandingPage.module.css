@@ -111,40 +111,6 @@
     color: #3d3d3d;
   }
   
-  button {
-    border-color: #f37e20;
-    color: white;
-    background-color: transparent;
-    border: 1px solid #f37e20;
-    background-color: #f37e20;
-    height: 35px;
-    margin-left: 35px;
-    border-radius: 50px;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 12.5px 34px;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    text-align: center;
-    -webkit-transition: opacity .2s;
-    -moz-transition: opacity .2s;
-    -ms-transition: opacity .2s;
-    -o-transition: opacity .2s;
-    transition: opacity .2s;
-    cursor: pointer;
-  
-  }
-  
-  button:hover {
-    border-color: #f37e20;
-    border: 1px solid #f37e20;
-    color: #f37e20;
-    background-color: white;
-  }
-   
  
   .dashImg {
    max-width: 100%;  

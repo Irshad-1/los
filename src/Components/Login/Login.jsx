@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../SideBar/Sidebar";
-import styles from "./UserDetails.module.css";
+import styles from "./Login.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
 
@@ -23,12 +23,14 @@ export const Login = () => {
           />
         </div>
         <div className={styles.details}>
-          <h1>Welcome to DEMO BANK</h1>
-          <h3>
-            Thank you for accepting the offer. Avail of you loan now. but first
-            you need to set your password and passcode.
-          </h3>
-          <div className={styles.passwordDiv}>
+          <div>
+            <h1>Welcome to DEMO BANK</h1>
+            <h3>
+              Thank you for accepting the offer. Avail of you loan now. but
+              first you need to set your password and passcode.
+            </h3>
+          </div>
+          <div className="passwordDiv inputCard">
             <Formik initialValues={initialValues}>
               {({
                 values,
@@ -43,7 +45,7 @@ export const Login = () => {
                 return (
                   <Form>
                     <div>
-                      <h3 className={styles.label}>Mobile Number</h3>
+                      <h3 className="label">Mobile Number</h3>
                       <Field
                         type="number"
                         name="mobileNumber"
@@ -53,7 +55,7 @@ export const Login = () => {
                     </div>
                     <ErrorMessage name="mobileNumber" />
                     <div style={{ display: "block" }}>
-                      <h3 className={styles.label}>Password</h3>
+                      <h3 className="label">Password</h3>
                       <Field
                         type={state ? "text" : "password"}
                         name="password"
@@ -62,19 +64,18 @@ export const Login = () => {
                       />
                     </div>
                     <ErrorMessage name="password" />
+                    <button
+                      onClick={() => {
+                        navigate("/loanAvailment");
+                      }}
+                    >
+                      Login
+                    </button>
                   </Form>
                 );
               }}
             </Formik>
           </div>
-          <button
-            onClick={() => {
-              navigate("/loanAvailment");
-            }}
-            style={{ marginLeft: "-220px" }}
-          >
-            Login
-          </button>
         </div>
       </div>
     </div>
