@@ -8,7 +8,7 @@ import { Navbar } from "../Navbar/Navbar";
 export const LoanAvailment = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className={styles.maindiv}>
       <Navbar />
       <Sidebar stepCompleted={5} />
 

@@ -8,6 +8,7 @@
     height: 60px;
     padding: 0.75rem 0;
     overflow: hidden;
+    background-color: white;
 }
 .navbarContainer img{
     padding-right: 30px;
