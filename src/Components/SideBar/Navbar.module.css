@@ -1,0 +1,51 @@
+.navbar {
+    width: 17%;
+    height: 100%;
+    background: linear-gradient(#e77817, #97291e, #e77817);
+    position: fixed;
+
+}
+
+.navbar>div:first-child {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.navbar>div>img {
+    max-width: 80px;
+    margin-left: -50px;
+}
+
+.sidenavList li {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.sidenavList>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenavList li>div>img {
+    max-width: 30px;
+}
+
+.sidenavList p {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.sidenavList>div {
+    width: 80%
+}
+
+.sidenavList li>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
