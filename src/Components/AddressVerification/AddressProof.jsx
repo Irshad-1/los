@@ -23,23 +23,23 @@ const AddressProof = () => {
                     <div className={styles.sd2mainDiv}>
                         <div>
                           <img src={img1} style={{width:"150px", marginLeft:"40px", height:"120px"}} />
-                          <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("pan")} />
+                          <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("aadhar")} />
                         </div>
                         <div>
                             <img src={img2}  style={{width:"190px", marginLeft:"-140px", height:"170px", marginTop:"0px", paddingTop:"25px"}}/>
-                            <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("pan")} />
+                            <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("dl")} />
                         </div>
                         <div>
                             <img src={img3} style={{ marginTop:"0px"}}/>
-                            <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("pan")} />
+                            <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("passport")} />
                         </div>
                         <div>
                             <img src={img4} style={{width:"160px", marginLeft:"-120px", height:"100px", marginTop:"-15px", paddingTop:"25px"}}/>
-                            <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("pan")} />
+                            <input type="radio" className={styles.checkbox} value='userAddId' onChange={()=>setUserAddId("NREGA")} />
                         </div>
                     </div>
                 </div>
-                <button onClick={() => navigate("/addressproofscan")}>Upload Now</button>
+                <button onClick={() => navigate("/addressproofscan")} disabled={userAddId===null}>Upload Now</button>
                 </div>
     </div>
   )
