@@ -60,7 +60,7 @@ const PanScan = () => {
                     </div>
 
                 </div>
-                <button onClick={()=> navigate("/addressproof")}>Confirm & Continue</button>
+                <button onClick={()=> navigate("/addressproof")} disabled={imgSrc === null}>Confirm & Continue</button>
             </div>
         </div>
     )

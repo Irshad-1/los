@@ -43,6 +43,23 @@
     margin-left: 20px;
 }
 
+
+.img1 :hover {
+    border: 2px solid orange;
+}
+.img1 {
+    display: flex;
+    
+}
+
+
+
 .sbd2div2 button {
     margin-top: 40px;
 }
+
+.checkbox {
+ margin-top: -80px;
+ margin-left: -20px;
+}
+
