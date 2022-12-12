@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
-const Sidebar = () => {
+import VerticalStepper from "./VerticalStepper";
+const Sidebar = (props) => {
   return (
     <div className={styles.navbar}>
       <div>
         <h1>DEMO BANK</h1>
       </div>
       <div className={styles.sidenavList}>
-        <div>
+        {/* <div>
           <ul>
             <li>
               <div>
@@ -55,7 +56,8 @@ const Sidebar = () => {
               </div>
             </li>
           </ul>
-        </div>
+        </div> */}
+        <VerticalStepper stepCompleted={props.stepCompleted} />
       </div>
     </div>
   );

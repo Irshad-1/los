@@ -3,20 +3,22 @@ import Sidebar from "../SideBar/Sidebar";
 import styles from "./UserDetails.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
+import { Navbar } from "../Navbar/Navbar";
 
 export const LoanAvailment = () => {
   const navigate = useNavigate();
   return (
-    <div className={styles.maindiv}>
-      <Sidebar />
+    <div>
+      <Navbar />
+      <Sidebar stepCompleted={5} />
 
       <div className={styles.subdiv2}>
-        <div className={styles.borderBottom}>
+        {/* <div className={styles.borderBottom}>
           <img
             src="https://internal.talash.net/inthub/public/images/int25yearslogo.jpg"
             alt="ICICI LOGO"
           />
-        </div>
+        </div> */}
         <div className={styles.loanAvail}>
           <h3>Tenor</h3>
           <div>

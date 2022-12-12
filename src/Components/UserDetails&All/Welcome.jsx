@@ -7,7 +7,7 @@ export const Welcome = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.maindiv}>
-      <Sidebar />
+      <Sidebar stepCompleted={3} />
 
       <div className={styles.subdiv2}>
         <div className={styles.borderBottom}>

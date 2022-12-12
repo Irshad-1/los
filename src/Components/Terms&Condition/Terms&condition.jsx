@@ -22,7 +22,7 @@ const TermsCondition = () => {
   };
   return (
     <div className={styles.mainDiv}>
-      <Sidebar />
+      <Sidebar stepCompleted={1} />
       <div className={styles.subdiv2}>
         <div className={styles.borderBottom}>
           <img

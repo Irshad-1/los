@@ -23,7 +23,11 @@
    }
 
 .sbd2div2 {
-    padding:70px
+    margin:50px auto;
+    width:40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    padding:100px;
 }
 .sbd2div2 h2 {
     font-size: 1.25rem;
@@ -45,7 +49,7 @@
     border: none!important;
     border-bottom: 1px solid #c8cacc!important;
     font-size: .8rem;
-    width: 25%;
+    width: 97%;
     height: 20px!important;
     outline: none;
 }

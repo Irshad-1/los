@@ -1,0 +1,9 @@
+.navbarContainer{
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 5px 13px -8px rgb(93 91 91 / 75%);
+    width: 100%;
+    position: fixed;
+    height: 60px;
+   
+}

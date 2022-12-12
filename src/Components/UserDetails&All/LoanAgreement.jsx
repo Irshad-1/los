@@ -10,7 +10,7 @@ export const LoanAgreement = () => {
   const [state, setState] = React.useState(false);
   return (
     <div className={styles.mainDiv}>
-      <Sidebar />
+      <Sidebar stepCompleted={3} />
       <div className={styles.subdiv2} style={{ paddingBottom: "50px" }}>
         <div className={styles.borderBottom}>
           <img

@@ -13,7 +13,7 @@ export const Login = () => {
   };
   return (
     <div className={styles.maindiv}>
-      <Sidebar />
+      <Sidebar stepCompleted={4} />
 
       <div className={styles.subdiv2}>
         <div className={styles.borderBottom}>

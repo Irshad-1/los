@@ -21,6 +21,9 @@ button {
     color: #f37e20;
     background-color: white;
   }
+  input[type=password]{
+    -webkit-text-security: square !important;
+  }
   .redButton{
     border-color: #ad1e23;
     color: white;

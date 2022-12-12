@@ -8,7 +8,7 @@ const UploadSelfie = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Sidebar />
+      <Sidebar stepCompleted={1} />
       <div className={styles.subdiv2}>
         <div className={styles.borderBottom}>
           <img
