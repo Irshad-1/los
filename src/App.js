@@ -1,27 +1,27 @@
 import Dashboard from "./Components/Dashboard/Dashboard";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import { Routes, Route } from "react-router-dom";
-import UserDetails from "./Components/UserDetails&All/UserDetails";
+import UserDetails from "./Components/UserDetails/UserDetails";
 import UserVerification from "./Components/MobileNumber&OtpVerification/UserVerification";
 import TermsCondition from "./Components/Terms&Condition/Terms&condition";
 import Documentation from "./Components/Documentation/Documentation";
-import { EmploymentFinancialDetails } from "./Components/UserDetails&All/EmploymentFinancialDetails";
-import { LoanDetails } from "./Components/UserDetails&All/LoanDetails";
+import { EmploymentFinancialDetails } from "./Components/EmploymentFinancialDetails/EmploymentFinancialDetails";
+import { LoanDetails } from "./Components/LoanDetails/LoanDetails";
 import PanVerify from "./Components/PanCardVerification/PanVerify";
 import PanScan from "./Components/PanCardScan/PanScan";
 import AddressProof from "./Components/AddressVerification/AddressProof";
-import { LoanAgreement } from "./Components/UserDetails&All/LoanAgreement";
+import { LoanAgreement } from "./Components/LoanAgreement/LoanAgreement";
 import AddressProofScan from "./Components/AddressVerification/AddressProofScan";
 import UploadSelfie from "./Components/SelfieVerification/UploadSelfie";
 import TakeSelfie from "./Components/SelfieVerification/TakeSelfie";
 import OtpVerification from "./Components/MobileNumber&OtpVerification/OtpVerification";
-import { Welcome } from "./Components/UserDetails&All/Welcome";
-import { SetPassword } from "./Components/UserDetails&All/SetPassword";
+import { Welcome } from "./Components/Welcome/Welcome";
+import { SetPassword } from "./Components/SetPassword/SetPassword";
 import { Login } from "./Components/Login/Login";
-import { LoanAvailment } from "./Components/UserDetails&All/LoanAvailment";
-import { LoanSummary } from "./Components/UserDetails&All/LoanSummary";
-import { Authentication } from "./Components/UserDetails&All/Authentication";
-import { Congratulations } from "./Components/UserDetails&All/Congratulations";
+import { LoanAvailment } from "./Components/LoanAvailment/LoanAvailment";
+import { LoanSummary } from "./Components/LoanSummary/LoanSummary";
+import { Authentication } from "./Components/Authentication/Authentication";
+import { Congratulations } from "./Components/Congratulations/Congratulations";
 
 function App() {
   return (
