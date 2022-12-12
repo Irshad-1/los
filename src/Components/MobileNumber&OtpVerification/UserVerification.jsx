@@ -4,6 +4,7 @@ import styles from "./UserVerification.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
+import TextError from "../TextError/TextError";
 
 const UserVerification = () => {
   const navigate = useNavigate();
@@ -67,7 +68,7 @@ const UserVerification = () => {
                     value={values.mobileNumber}
                   />
                   <br />
-                  <ErrorMessage name="mobileNumber" />
+                  <ErrorMessage name="mobileNumber" component={TextError} />
 
                   <br />
                   <br />

@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const AddressProof = () => {
   const navigate = useNavigate();
+  const [userAddId, setUserAddId] = React.useState(null);
   return (
     <div>
       <Sidebar stepCompleted={1} />
@@ -27,6 +28,12 @@ const AddressProof = () => {
                 src={img1}
                 style={{ width: "150px", marginLeft: "40px", height: "120px" }}
               />
+              <input
+                type="radio"
+                className={styles.checkbox}
+                value="userAddId"
+                onChange={() => setUserAddId("aadhar")}
+              />
             </div>
             <div>
               <img
@@ -39,9 +46,21 @@ const AddressProof = () => {
                   paddingTop: "25px",
                 }}
               />
+              <input
+                type="radio"
+                className={styles.checkbox}
+                value="userAddId"
+                onChange={() => setUserAddId("dl")}
+              />
             </div>
             <div>
               <img src={img3} style={{ marginTop: "0px" }} />
+              <input
+                type="radio"
+                className={styles.checkbox}
+                value="userAddId"
+                onChange={() => setUserAddId("passport")}
+              />
             </div>
             <div>
               <img
@@ -54,10 +73,19 @@ const AddressProof = () => {
                   paddingTop: "25px",
                 }}
               />
+              <input
+                type="radio"
+                className={styles.checkbox}
+                value="userAddId"
+                onChange={() => setUserAddId("NREGA")}
+              />
             </div>
           </div>
         </div>
-        <button onClick={() => navigate("/addressproofscan")}>
+        <button
+          onClick={() => navigate("/addressproofscan")}
+          disabled={userAddId === null}
+        >
           Upload Now
         </button>
       </div>
